@@ -38,17 +38,6 @@ const scrollHeader = () =>{
 }
 window.addEventListener('scroll', scrollHeader)
 
-/*=============== TESTIMONIAL SWIPER ===============*/
-let testimonialSwiper = new Swiper(".testimonial-swiper", {
-    spaceBetween: 30,
-    loop: 'true',
-
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-});
-
 /*=============== NEW SWIPER ===============*/
 let newSwiper = new Swiper(".new-swiper", {
     spaceBetween: 24,
@@ -146,7 +135,7 @@ themeButton.addEventListener('click', () => {
     // We save the theme and the current icon that the user chose
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
-})
+});
 
 /*=============== EMAIL VALIDATION ===============*/
 const form = document.getElementById('form'),
