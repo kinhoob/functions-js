@@ -11,7 +11,6 @@ if(navToggle){
     })
 }
 
-
 /*===== MENU HIDDEN =====*/
 /* Validate if constant exists */
 if(navClose){
@@ -86,6 +85,7 @@ const scrollUp = () =>{
 						: scrollUp.classList.remove('show-scroll')
 }
 window.addEventListener('scroll', scrollUp)
+
 
 /*=============== SHOW CART ===============*/
 const cart = document.getElementById('cart'),
