@@ -1,9 +1,9 @@
-/*=============== SHOW MENU ===============*/
+		/*=============== SHOW MENU ===============*/
 const navMenu = document.getElementById('nav-menu'),
       navToggle = document.getElementById('nav-toggle'),
       navClose = document.getElementById('nav-close')
 
-/*===== MENU SHOW =====*/
+			/*===== MENU SHOW =====*/
 /* Validate if constant exists */
 if(navToggle){
     navToggle.addEventListener('click', () =>{
@@ -11,7 +11,7 @@ if(navToggle){
     })
 }
 
-/*===== MENU HIDDEN =====*/
+		/*===== MENU HIDDEN =====*/
 /* Validate if constant exists */
 if(navClose){
     navClose.addEventListener('click', () =>{
@@ -19,7 +19,7 @@ if(navClose){
     })
 }
 
-/*=============== REMOVE MENU MOBILE ===============*/
+		/*=============== REMOVE MENU MOBILE ===============*/
 const navLink = document.querySelectorAll('.nav__link')
 
 const linkAction = () =>{
@@ -29,7 +29,7 @@ const linkAction = () =>{
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
-/*=============== CHANGE BACKGROUND HEADER ===============*/
+			/*=============== CHANGE BACKGROUND HEADER ===============*/
 const scrollHeader = () =>{
     const header = document.getElementById('header')
     // When the scroll is greater than 50 viewport height, add the scroll-header class to the header tag
@@ -38,7 +38,7 @@ const scrollHeader = () =>{
 }
 window.addEventListener('scroll', scrollHeader)
 
-/*=============== NEW SWIPER ===============*/
+			/*=============== NEW SWIPER ===============*/
 let newSwiper = new Swiper(".new-swiper", {
     spaceBetween: 24,
     loop: 'true',
@@ -77,7 +77,7 @@ const scrollActive = () =>{
 }
 window.addEventListener('scroll', scrollActive)
 
-/*=============== SHOW SCROLL UP ===============*/ 
+			/*=============== SHOW SCROLL UP ===============*/ 
 const scrollUp = () =>{
 	const scrollUp = document.getElementById('scroll-up')
     // When the scroll is higher than 350 viewport height, add the show-scroll class to the a tag with the scrollup class
@@ -87,12 +87,12 @@ const scrollUp = () =>{
 window.addEventListener('scroll', scrollUp)
 
 
-/*=============== SHOW CART ===============*/
+			/*=============== SHOW CART ===============*/
 const cart = document.getElementById('cart'),
       cartShop = document.getElementById('cart-shop'),
       cartClose = document.getElementById('cart-close')
 
-/*===== CART SHOW =====*/
+			/*===== CART SHOW =====*/
 /* Validate if constant exists */
 if(cartShop){
     cartShop.addEventListener('click', () =>{
@@ -100,7 +100,7 @@ if(cartShop){
     })
 }
 
-/*===== CART HIDDEN =====*/
+			/*===== CART HIDDEN =====*/
 /* Validate if constant exists */
 if(cartClose){
     cartClose.addEventListener('click', () =>{
@@ -108,7 +108,7 @@ if(cartClose){
     })
 }
 
-/*=============== DARK LIGHT THEME ===============*/ 
+			/*=============== DARK LIGHT THEME ===============*/ 
 const themeButton = document.getElementById('theme-button')
 const darkTheme = 'dark-theme'
 const iconTheme = 'bx-sun'
@@ -138,7 +138,7 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-icon', getCurrentIcon())
 });
 
-/*=============== EMAIL VALIDATION ===============*/
+			/*=============== EMAIL VALIDATION ===============*/
 const form = document.getElementById('form'),
       email = document.getElementById('email'),
       pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/
