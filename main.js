@@ -1,10 +1,10 @@
-		/*=============== SHOW MENU ===============*/
+/*=============== SHOW MENU ===============*/
 const navMenu = document.getElementById('nav-menu'),
       navToggle = document.getElementById('nav-toggle'),
       navClose = document.getElementById('nav-close')
 
 
-			/*===== MENU SHOW =====*/
+/*===== MENU SHOW =====*/
 /* Validate if constant exists */
 if(navToggle){
     navToggle.addEventListener('click', () =>{
@@ -12,7 +12,7 @@ if(navToggle){
     })
 }
 
-		/*===== MENU HIDDEN =====*/
+/*===== MENU HIDDEN =====*/
 /* Validate if constant exists */
 if(navClose){
     navClose.addEventListener('click', () =>{
@@ -20,7 +20,7 @@ if(navClose){
     })
 }
 
-		/*=============== REMOVE MENU MOBILE ===============*/
+/*=============== REMOVE MENU MOBILE ===============*/
 const navLink = document.querySelectorAll('.nav__link')
 
 const linkAction = () =>{
@@ -30,7 +30,7 @@ const linkAction = () =>{
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
-			/*=============== CHANGE BACKGROUND HEADER ===============*/
+/*=============== CHANGE BACKGROUND HEADER ===============*/
 const scrollHeader = () =>{
     const header = document.getElementById('header')
     // When the scroll is greater than 50 viewport height, add the scroll-header class to the header tag
@@ -39,7 +39,7 @@ const scrollHeader = () =>{
 }
 window.addEventListener('scroll', scrollHeader)
 
-			/*=============== NEW SWIPER ===============*/
+/*=============== NEW SWIPER ===============*/
 let newSwiper = new Swiper(".new-swiper", {
     spaceBetween: 24,
     loop: 'true',
@@ -88,12 +88,12 @@ const scrollUp = () =>{
 window.addEventListener('scroll', scrollUp)
 
 
-			/*=============== SHOW CART ===============*/
+/*=============== SHOW CART ===============*/
 const cart = document.getElementById('cart'),
       cartShop = document.getElementById('cart-shop'),
       cartClose = document.getElementById('cart-close')
 
-			/*===== CART SHOW =====*/
+/*===== CART SHOW =====*/
 /* Validate if constant exists */
 if(cartShop){
     cartShop.addEventListener('click', () =>{
@@ -101,7 +101,7 @@ if(cartShop){
     })
 }
 
-			/*===== CART HIDDEN =====*/
+/*===== CART HIDDEN =====*/
 /* Validate if constant exists */
 if(cartClose){
     cartClose.addEventListener('click', () =>{
