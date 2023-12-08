@@ -56,6 +56,7 @@ let newSwiper = new Swiper(".new-swiper", {
     },
 });
 
+
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 const sections = document.querySelectorAll('section[id]')
     
