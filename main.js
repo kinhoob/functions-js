@@ -140,7 +140,7 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-icon', getCurrentIcon())
 });
 
-			/*=============== EMAIL VALIDATION ===============*/
+/*=============== EMAIL VALIDATION ===============*/
 const form = document.getElementById('form'),
       email = document.getElementById('email'),
       pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/
