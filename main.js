@@ -155,7 +155,6 @@ email.addEventListener('input', () => {
       form.classList.add('invalid')
       form.classList.remove('valid')
    }
- 
    // If the input field is empty, delete classes
    if (email.value == '') {
       form.classList.remove('invalid')
