@@ -93,6 +93,7 @@ const cart = document.getElementById('cart'),
       cartShop = document.getElementById('cart-shop'),
       cartClose = document.getElementById('cart-close')
 
+
 /*===== CART SHOW =====*/
 /* Validate if constant exists */
 if(cartShop){
